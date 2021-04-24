@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<script>
+    function changeRank(){
+        document.getElementById("rank").innerHTML="Silver";
+        document.getElementById("rank").style.color = "#C36902";
+    }
+    function changeRank2(){
+        document.getElementById("rank").innerHTML="Wizard";
+        document.getElementById("rank").style.color = "#6857AB";
+    }
+    function changeRank3(){
+        document.getElementById("rank").innerHTML="Dragon";
+        document.getElementById("rank").style.color = "#9A0026";
+    }
+    
+</script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b4943cc05.js" crossorigin="anonymous"></script>
+    <title>BinCraft - Minecraft Server</title>
+</head>
+<body>
+    
+        <header class="header">
+                <div id="logo">
+                    <i class="fas fa-server fa-3x company-logo" ></i>
+                    <h1 id="company-name">BinCraft :</h1>
+                    <br>
+                    <h1 id="rank">Guest</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="nav-link" href="#feature">Features</a></li>
+                        <li><a class="nav-link" href="#samples">How it Works</a></li>
+                        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+    <div class="main-content">
+        <section class="email">
+            <div class="container">
+                <h3>BinCraft, the greatest survival multiplayer server!<h3>
+                <form>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" class="primary-input" required>
+                <br>
+                <button type="submit" id="submit"class="submit-btn">Get Started</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="feature">
+            <div class="container inner-feature">
+                <div class="icon">
+                    <i class="fas fa-globe-europe fa-5x"></i>     
+                </div>
+                <div >
+                    <h3>Great Economy</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia dolores, itaque aliquam natus sint pariatur ratione. Repudiandae, eius quis! Officiis!</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-khanda fa-5x"></i>
+                </div>
+                <div>
+                    <h3>Rebirth System</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui laborum similique voluptatem nisi itaque, veritatis laboriosam dolorem illo eligendi voluptate.</p>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-shield-virus fa-5x"></i>
+                </div>
+                <div>
+                    <h3>Anti Hack Client</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta itaque minima placeat consequatur cumque facilis reprehenderit et exercitationem nobis delectus!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="samples">
+            <div class="container">
+            <iframe class="frame-border" width="720" height="454" src="https://www.youtube.com/embed/I-sH53vXP2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <!-- <div class="container"> -->
+                <div class="box">
+                    <i class="fas fa-ring fa-3x silver"></i>
+                    <h3>Silver</h3>
+                    <h2>$9.99</h2>
+                    <ol>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum.</li>
+                    </ol>
+                    <button type="submit" onclick="changeRank()" class="pricing-btn">Select</button>
+                </div>
+                <div class="box">
+                    <i class="fas fa-hat-wizard fa-3x wizard"></i>
+                    <h3>Wizard</h3>
+                    <h2>$19.99</h2>
+                    <ol>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum.</li>
+                    </ol>
+                    <button type="submit" onclick="changeRank2()" class="pricing-btn">Select</button>
+                </div>
+                <div class="box">
+                    <i class="fas fa-dragon fa-3x dragon"></i>
+                    <h3>Dragon</h3>
+                    <h2>$29.99</h2>
+                    <ol>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum.</li>
+                    </ol>
+                    <button type="submit" onclick="changeRank3()" class="pricing-btn">Select</button>
+                </div>
+            <!-- </div> -->
+        </section>
+
+        <footer class="footer">
+            <!-- <div class="container"> -->
+                <h5><a href="#">Privacy</a></h5>
+                <h5><a href="#">Terms</a></h5>
+                <h5><a href="#">Contact</a></h5>
+                <h5>Bin Craft &copy; 2021</h5>
+            <!-- </div>   -->
+        </footer>
+    </div>
+
+</body>
+</html>
