@@ -135,17 +135,18 @@ a {
 
 #feature {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background: #0b2429;
     color: #f3f3f3;
 }
 
 .inner-feature{
     width: 60%;
-    padding: 40px 0;
     display: grid;
+    padding: 40px;
     grid-template-columns: 1fr 3fr;
     grid-gap: 20px;
+    justify-content: center;
     text-align: start;
     align-items: center;
 }
@@ -163,6 +164,14 @@ a {
 
 .frame-border {
     box-shadow: 0 0 15px 10px rgba(61,61,61,0.6);
+}
+
+.credits {
+    color: #fff;
+}
+
+#samples h3{
+    margin: 10px;
 }
 
 #pricing {
@@ -257,7 +266,7 @@ footer h5 {
 
 /* Media Querys */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .toggle-btn {
         display: flex;
     }
