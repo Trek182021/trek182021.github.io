@@ -36,7 +36,7 @@ a {
 }
 
 /* Body */
-.header{
+#header{
     position: fixed;
     background: #3d3d3d;
     width: 100%;
@@ -49,12 +49,14 @@ a {
     display:flex;
     margin: 25px 25px;
 }
-
+#header-img {
+    display: none;
+}
 #logo h1 {
     margin: 10px 0px 0px 10px;
 }
 
-nav {
+#nav-bar {
     float: right;
     margin: auto;
     height: 100px;
@@ -63,12 +65,12 @@ nav {
     
 }
 
-nav ul {
+#nav-bar ul {
     display: flex;
     margin-top: 40px;
 }
 
-nav li{
+#nav-bar li{
     font-size: 20px;
     list-style-type: none;
     height: 100%;
@@ -224,7 +226,7 @@ footer h5 {
     padding: 0 10px;
 }
 
-/* Toggle Button For Responsive Nav Bar */
+/* Toggle Button For Responsive #nav-bar Bar */
 
 .toggle-btn {
     position: absolute;
@@ -260,27 +262,27 @@ footer h5 {
         display: flex;
     }
 
-    #checkbox:checked ~ nav {
+    #checkbox:checked ~ #nav-bar {
         display: block;
     }
     #logo {
        margin: 10px;
     }
 
-    nav {
+    #nav-bar {
         display: none;
         padding-right: 0;
         width: 100%;
         
     }
-    nav ul{
+    #nav-bar ul{
         flex-direction: column;
         align-items: center;
         width: 100%;
         margin:0;
         
     }
-    nav ul li {
+    #nav-bar ul li {
         margin-top: 5px;
         align-items: center;
     }
