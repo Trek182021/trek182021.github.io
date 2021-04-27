@@ -136,12 +136,18 @@ a {
 #feature {
     width: 100%;
     height: 50vh;
+    min-height: 50vh;
     background: #0b2429;
     color: #f3f3f3;
+    overflow: hidden;
 }
 
+#feature > div {
+    height: 85%;
+}
 .inner-feature{
     width: 60%;
+    max-height: 100%;
     display: grid;
     padding: 40px;
     grid-template-columns: 1fr 3fr;
@@ -317,12 +323,13 @@ footer h5 {
     }
 
     #feature {
-        height: 800px;
+        height: 700px;
     }
     .inner-feature {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 20px 0;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -359,4 +366,23 @@ footer h5 {
         justify-content: center;
         align-items: center;
     }
+
+    @media (max-height: 600px) {
+        .email h3{
+            font-size: 20px;
+            padding-bottom: 5px;
+        }
+        #header h1{
+            font-size: 1.6rem;
+        }
+
+        .inner-feature h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 768) {
+
+    }
+
 }
