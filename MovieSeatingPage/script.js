@@ -7,7 +7,6 @@ let ticketPrice = +currentMovie.value;
 function update(){
     const numOfSelectedSeats = document.querySelectorAll('.rows .seat.selected').length;
     selectedSeats.innerText = numOfSelectedSeats;
-
     totalPrice.innerText = ticketPrice * numOfSelectedSeats;
 }
 
