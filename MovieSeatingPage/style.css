@@ -34,6 +34,12 @@ body {
     -moz-appearance: none;
 }
 
+.movie-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .seat {
     background-color: #444451;
     width: 45px;
@@ -112,7 +118,7 @@ body {
 @media (max-height: 850px), (max-width: 750px) {
     .movie-container label {
         display: block;
-        padding: 10px 60px;
+        padding: 10px 20[x];
     }
 
     .movie-container #movies {
@@ -150,8 +156,4 @@ body {
     .seat:nth-child(3) , .seat:nth-child(8){
         margin-right: 15px;
     }
-}
-
-@media (max-width:400px) {
-    
 }
