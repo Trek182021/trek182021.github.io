@@ -109,7 +109,7 @@ body {
 
 /* Media Queries */
 
-@media (max-height: 968px) {
+@media (max-height: 850px), (max-width: 750px) {
     .movie-container label {
         display: block;
         padding: 10px 60px;
@@ -144,13 +144,14 @@ body {
         margin: 20px;
         text-align: center;
     }
-}
-
-@media (max-width:350px) {
     .seat {
         margin: 5px 3px;
     }
     .seat:nth-child(3) , .seat:nth-child(8){
         margin-right: 15px;
     }
+}
+
+@media (max-width:400px) {
+    
 }
