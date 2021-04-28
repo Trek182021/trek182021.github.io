@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root {
+    --selected-color: #009999;
+    --occupied-color: #e74c3c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background:#091A26;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-container {
+    margin: 20px;
+    font-size: 1.8rem;
+}
+
+.movie-container #movies{
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    border-radius: 7px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.seat {
+    background-color: #444451;
+    width: 45px;
+    height: 43px;
+    margin: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.rows {
+    display: flex;
+}
+
+.seat:nth-child(3) , .seat:nth-child(8){
+    margin-right: 40px;
+}
+
+.seat.occupied {
+    background: var(--occupied-color);
+}
+.seat.selected {
+    background: var(--selected-color);
+}
+
+.rows .seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: #7C7C85;
+}
+
+.seating {
+    perspective: 3000px;
+}
+.screen{
+    background: #fff;
+    min-height:30vh;
+    width: 100%;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255,255,255, 0.7)
+}
+
+.showcase {
+    background: rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.showcase li small {
+    margin-left: 10px;
+}
+
+.end-text {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+.end-color {
+    color: var(--selected-color);
+}
+
+/* Media Queries */
+
+@media (max-height: 968px) {
+    .movie-container label {
+        display: block;
+        padding: 10px 60px;
+    }
+
+    .movie-container #movies {
+        text-align-last:right;
+        padding-right: 35px;
+        direction: rtl;
+    }
+    .movie-container {
+        font-size: 1rem;
+    }
+
+    .movie-container #movies {
+        font-size: .8rem;
+    }
+    
+    .seat {
+        width: 15px;
+        height: 12px;
+    }
+
+    .screen {
+        min-height: 30vh;
+        width: 80%;
+        margin: auto;
+    }
+
+    .end-text {
+        font-size: 1rem;
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width:350px) {
+    .seat {
+        margin: 5px 3px;
+    }
+    .seat:nth-child(3) , .seat:nth-child(8){
+        margin-right: 15px;
+    }
+}
