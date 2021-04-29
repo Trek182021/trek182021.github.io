@@ -6,7 +6,7 @@ const currentMovie = document.getElementById('movies');
 let ticketPrice = +currentMovie.value;
 
 populateUI();
-
+update();
 function setSeatIndex() {
     const selectedSeats = document.querySelectorAll('.rows .seat.selected');
 
@@ -29,7 +29,6 @@ function update(){
 function populateUI() {
     const seatIndex = JSON.parse(localStorage.getItem('selectedSeatIndex'));
     seatIndex.forEach(element => seats[element].classList.add('selected'));
-    ticketPrice = localStorage.getItem('currentMoviePrice');
     currentMovie.selectedIndex = [localStorage.getItem('currentMovieIndex')];
 }
 
