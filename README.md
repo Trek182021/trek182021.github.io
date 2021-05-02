@@ -7,7 +7,7 @@ This repository contains all the projects made in fullfilment with the Responsiv
 
 - [x] Tribute Page: https://trek182021.github.io/Tribute%20Page/index.html -HTML and CSS
 - [x] Survey Form : https://trek182021.github.io/ - HTML and CSS
-- [x] Product Landing Page (Responsive) : https://trek182021.github.io/Product%20Landing%20Page/index.html - HTML, CSS, and a little bit of JS
+- [x] Product Landing Page (Responsive) : https://trek182021.github.io/ProductLandingPage/index.html - HTML, CSS, and a little bit of JS
 - [x] 100DaysCSS Challenge ( Box Animation ) : https://trek182021.github.io/100CSSChallenge/BoxAnimation/index.html -HTML CSS
 - [ ] Techical Documentation Page: Not yet Finished.
 - [ ] Personal Portfolio Webpage: Not yet started.
