@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: #f3f3f3;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+  
+hr {
+    width: 60%;
+    margin: 0;
+}
+
+header {
+    background: #0b2429;
+    color: #fff;
+    position: fixed;
+    min-height: 100%;
+    width: 25%;
+    text-align: end;
+}
+
+header h1 {
+    padding: 32px 30px 10px 30px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.7rem;
+}
+header ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    color: inherit;
+}
+header a {
+    color: #fff;
+    width: 100%;
+    display: block;
+    padding: 30px;
+    letter-spacing: 3px;
+}
+nav {
+    width: 100%;
+}
+
+.bar {
+    color: #fff;
+    position: absolute;
+    top: 28px;
+    right: 50px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.main-content {
+    position: absolute;
+    min-width: 65%;
+    margin-left: 25%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.main-content h1 {
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+
+.content {
+    scroll-margin-top: 90px;
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+.content p {
+    font-size: 1.3rem;
+    padding: 10px 50px 5px 20px;
+}
+
+.content li {
+    width: 80%;
+    font-size: 1.3rem;
+}
+.box {
+    width: 560px;
+    background: #24283b;
+    height: 400px;
+    border-radius: 15px;
+    color: #2ac3de;
+    margin: 20px 40px;
+}
+
+.box pre {
+    position: relative;
+    top: 20px;
+    right: 50px;
+}
+
+.gnome-sample {
+    background: url('gnomesample.png') no-repeat center center / contain;
+    height: 450px;
+    width: 80%;
+    margin: 0;
+}
+
+#ref a {
+    padding: 0;
+}
+
+#ref p {
+    padding-bottom: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+    header {
+        min-width: 0%;
+        width: 100%;
+        min-height: 15vh;
+        text-align: center;
+        height: 15vh;
+        z-index: 1;
+        display: block;
+    }
+    
+    header h1 {
+        text-align: start;
+        font-size: 1.3rem;
+    }
+
+    header a {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+    .bar {
+        visibility:visible;
+    }
+
+    #checkbox:checked ~ nav{
+        visibility: visible;
+        background: #0b2429;
+        display: block;
+    }
+
+    .main-content {
+        margin: 70px 20px 20px 20px;
+        min-width: 100vw;
+    }
+
+    .content p {
+
+
+    }
+}

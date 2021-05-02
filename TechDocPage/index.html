@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b4943cc05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Gnome Sort Documentation</h1>
+
+        <label for="checkbox">
+            <i class="fas fa-bars bar fa-3x"></i>
+        </label>
+        <input type="checkbox" name="toggle-btn" id="checkbox">
+        <nav>
+            <ul>
+                <li><a class="anchor" href="#introduction">Introduction</a></li>
+                <li><a class="anchor" href="#hist">History</a></li>
+                <li><a class="anchor" href="#algo">Algorithm</a></li>
+                <li><a class="anchor" href="#samples">Examples</a></li>
+                <li><a class="anchor" href="#appl">Application</a></li>
+                <li><a class="anchor" href="#ref">Reference</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <section class="content" id="introduction" >
+            <h1>Introduction</h1>
+            <hr>
+            <p>Gnome sort is a sorting algorithm originally proposed by Iranian computer scientist Hamid Sarbazi-Azad (professor of Computer Science and Engineering at Sharif University of Technology) in 2000. The sort was first called stupid sort (not to be confused with bogosort), and then later described by Dick Grune and named gnome sort.</p>
+            <p>The gnome sort is similar to insertion sort in a way that it works with one item at a time but gets the item to the proper place by a series of swaps, similar to a bubble sort. It is conceptually simple, requiring no nested loops.</p>
+        </section>
+        <section class="content content-one" id="hist">
+            <h1>Step Process</h1>
+            <hr>
+            <p>Gnome Sort also called Stupid sort is based on the concept of a Garden Gnome sorting his flower pots. A garden gnome sorts the flower pots by the following method- </p>
+            <ul>
+                <li>He looks at the flower pot next to him and the previous one; if they are in the right order he steps one pot forward, otherwise he swaps them and steps one pot backwards.</li>
+                <li>If there is no previous pot (he is at the starting of the pot line), he steps forwards; if there is no pot next to him (he is at the end of the pot line), he is done.</li>
+            </ul>
+        </section>
+        <section class="content content-one" id="algo">
+            <h1>Algorithm</h1>
+            <hr>
+            <p>Here is pseudocode for the gnome sort using a zero-based array:</p>
+            
+
+            <div class="box">
+                <pre>
+                    --> Function/Method accepts an array
+                    procedure gnomeSort(a[]):
+
+                    --> Start in position one
+                    pos := 0
+
+                    --> While the position is not equal to the size of array. 
+                    while pos < length(a):
+
+                        -->  If the position is in the first spot of the array,
+                        -->  If number in spot we're in is greater than the number behind,
+                        -->  Move one space
+                        if (pos == 0 or a[pos] >= a[pos-1]):
+                            pos := pos + 1
+
+                        -->  Otherwise, Swap value in present position and the previous value.
+                        else:
+                            swap a[pos] and a[pos-1]
+                            pos := pos - 1
+                    </pre>
+            </div>
+        </section>
+        <section class="content content-one" id="samples">
+            <h1>Example</h1>
+            <hr>
+            <p>Here's an example on how this sorting algorithm sort an array of integers.</p>
+            <div class="gnome-sample"></div>
+        </section>
+        <section class="content content-one" id="appl">
+            <h1>Facts about Gnome Sort</h1>
+            <hr>
+            <p>Limitations of Gnome Sort:</p>
+            <ul>
+                <li>Since Gnome Sort is not quite the fastest sorting algorithm, its not used very much, but it could a good starting point in understanding how other sorting algorithm works.</li>
+                <li>An example would be, the <a href="#insert-sort">insertion sort</a> which is one of the basic sorting algorithms which works the same way as gnome sort without the going back step whenever a swap takes place.</li>
+                <li>The average running time of this algorithm is O(n^2) but tends towards O(n) if the list is nearly sorted.</li>
+            </ul>
+        </section>
+        <section class="content content-one" id="ref" >
+            <h1>Reference</h1>
+            <hr>
+            <p>More Information about this sorting algorithm can be found in <a href="https://en.wikipedia.org/wiki/Gnome_sort">here</a></p>
+            <p>Other Sorting Algorithms: </p>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort</a> <small>(Basic Sorting Algo)</small></li>
+                <li id="insert-sort"><a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort</a> <small>(Basic Sorting Algo)</small></li>
+                <li><a href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort</a> <small>(Divide and Conquer Algo)</small></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
