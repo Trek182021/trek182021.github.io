@@ -73,12 +73,13 @@ nav {
 }
 
 .main-content {
-    position: absolute;
+    position: relative;
     min-width: 65%;
     margin-left: 25%;
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 
 .main-content h1 {
@@ -94,7 +95,7 @@ nav {
 
 .content p {
     font-size: 1.3rem;
-    padding: 10px 50px 5px 20px;
+    padding: 10px 50px 5px 0;
 }
 
 .content li {
@@ -135,13 +136,15 @@ nav {
 
 @media (max-width: 900px) {
     header {
-        min-width: 0%;
+        top: 0;
+        min-width: 100%;
         width: 100%;
-        min-height: 15vh;
+        min-height: 5vh;
         text-align: center;
-        height: 15vh;
+        height: 10vh;
         z-index: 1;
         display: block;
+        max-width: 100%;
     }
     
     header h1 {
@@ -169,11 +172,16 @@ nav {
 
     .main-content {
         margin: 70px 20px 20px 20px;
-        min-width: 100vw;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .content {
+        width: 100%;
     }
 
     .content p {
-
-
+        padding-right: 0;
     }
 }
+
